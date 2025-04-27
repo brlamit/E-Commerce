@@ -45,7 +45,9 @@ Route::get('/search-user', [AdminController::class, 'SearchUser']);
 /* User routes */
 
 route::get('/', [HomeController::class, 'index']);
-route::get('/home', [HomeController::class, 'Home'])->name('home')->middleware('auth','verified');
+// route::get('/home', [HomeController::class, 'Home'])->name('home')->middleware('auth','verified');
+
+route::get('/home', [HomeController::class, 'Home'])->name('home');
 route::get('/my-account', [HomeController::class, 'UserAccount'])->name('user.account');
 route::get('/user/logout', [HomeController::class, 'UserLogout'])->name('user.logout');
 Route::get('/product_details/{id}',[HomeController::class, 'ProductDetails']);
