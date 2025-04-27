@@ -23,10 +23,15 @@
                             <div class="product-cart-wrap mb-30">
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
-                                        <a href="{{url('product_details', $product->id)}}">
-                                            <img class="default-img" src="/products_images/{{$product->image}}" alt="product_image">
-                                            <img class="hover-img" src="/products_images/{{$product->image}}" alt="product_image">
-                                        </a>
+                                    @php
+    $imageName = basename($product->image);
+@endphp
+
+<a href="{{ url('product_details', $product->id) }}">
+    <img class="default-img" src="{{ asset('products_images/' . $imageName) }}" alt="product_image">
+    <img class="hover-img" src="{{ asset('products_images/' . $imageName) }}" alt="product_image">
+</a>
+
                                     </div>
                                     <div class="product-action-1">
                                         <a aria-label="View Details" href="{{url('product_details', $product->id)}}" class="action-btn hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>

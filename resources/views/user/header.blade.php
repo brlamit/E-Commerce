@@ -177,7 +177,7 @@
                     </div>
                 </div>
                 <div class="hotline d-none d-lg-block">
-                    <p><i class="fi-rs-smartphone"></i><span>Toll Free</span> (+90) 5367-934-046 </p>
+                    <p><i class="fi-rs-smartphone"></i><span>Toll Free</span> (+977) 980-9734-046 </p>
                 </div>
             </div>
         </div>

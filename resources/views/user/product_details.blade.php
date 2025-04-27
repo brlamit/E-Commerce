@@ -79,7 +79,10 @@
                                         <!-- MAIN SLIDES -->
                                         <div class="product-image-slider">
                                             <figure class="border-radius-10">
-                                                <img src="/products_images/{{$product->image}}" alt="product image">
+                                                @php
+                                                    $imageName = basename($product->image);
+                                                @endphp
+                                            <img class="default-img" src="{{ asset('products_images/' . $imageName) }}" alt="product_image">
                                             </figure>
                                         </div>
                                     </div>

@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="user/assets/css/custom.css">
 </head>
 
-<body>
+<body class=" bg-slate-700">
     @include('user.header')
     @include('user.mobile_header')    
     <main class="main">
