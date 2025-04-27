@@ -45,11 +45,16 @@
             </div>
         </div>
     </div>
+    <script src="https://cdn.tailwindcss.com"></script>
     <div class="header-middle header-middle-ptb-1 d-none d-lg-block">
         <div class="container">
             <div class="header-wrap">
                 <div class="logo logo-width-1">
-                    <a href="/"><img src="user/assets/imgs/logo/app_logo.png" alt="logo"></a>
+                <h2 class="text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-pink-500 to-yellow-500 tracking-wide">
+  ALL IN ONE
+</h2>
+
+                    <!-- <a href="/"><img src="user/assets/imgs/logo/app_logo.png" alt="logo"></a> -->
                 </div>
                 <div class="header-right">
                     <div class="search-style-1">
